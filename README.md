@@ -1,18 +1,58 @@
 # Pet Face Classification
 
-Academic machine-learning project for image classification using transfer learning with a pretrained ResNet50 model.
+Academic computer-vision project exploring image classification with transfer learning using a pretrained ResNet50 model.
+
+> **Project type:** Academic / learning project
 
 ## Approach
-- Image preprocessing and augmentation
-- ResNet50 pretrained on ImageNet
-- Frozen convolutional base with custom classification layers
-- Categorical cross-entropy loss
+
+```text
+Pet images
+   ↓
+Resize / preprocessing / augmentation
+   ↓
+ResNet50 pretrained on ImageNet
+   ↓
+Frozen convolutional base
+   ↓
+Custom classification layers
+   ↓
+Pet-face class prediction
+```
+
+The notebook uses a 224×224×3 input and `preprocess_input`, followed by training/validation monitoring and test-set prediction.
+
+## Techniques
+
+- TensorFlow / Keras
+- ResNet50 transfer learning
+- Image preprocessing
+- Data augmentation
+- Frozen pretrained feature extractor
+- Dropout
+- Categorical cross-entropy
 - Adam optimizer
-- Training/validation monitoring
-- Test-set evaluation and prediction
+- Training/validation loss and accuracy plots
 
-## Project status
-Academic / learning project. The notebook is preserved as coursework and is not presented as evidence of independent production-level deep-learning engineering.
+## Repository contents
 
-## Source
-Original academic notebook by Shaik Muneeruddin.
+```text
+Pet_Face-Classification/
+├── README.md
+├── requirements.txt
+└── pet_face_classification.ipynb
+```
+
+The repository is intended to preserve the academic notebook workflow. Dataset files and trained weights are not included unless explicitly added later.
+
+## Status
+
+This is coursework/learning work, not a claim of production-grade computer-vision engineering.
+
+## Requirements
+
+Install the packages listed in `requirements.txt`.
+
+## Author
+
+**Shaik Muneeruddin**
